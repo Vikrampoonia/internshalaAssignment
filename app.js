@@ -9,7 +9,7 @@ const app=express();
 app.use(express.json())
 app.use(cors())
 const dbPassword = process.env.DB_PASSWORD;
-
+console.log(dbPassword, 'Hello World')
 // MySQL Database Connection
 const db = mysql.createConnection({
     host: 'internshala-internshala.f.aivencloud.com',
